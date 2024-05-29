@@ -5,16 +5,29 @@ public class Main {
 
   public static void main(String[] args) {
 
-//    Person person = new Person();
+    Person person = new Person("Maarten", 33);
+    Person[] personsArray = {
+        new Person("Alice", 25),
+        new Person("Bob", 30),
+        new Person("Charlie", 35)
+    };
+
     printNumbers();
     biggestValue();
 
     evenNumbers();
     evenNumbers2();
     printOutAllValuesOfArray();
-    Person person = new Person(33, "Maarten");
     System.out.println(person.toString());
 
+    for (int i = 0; i < personsArray.length; i++) {
+      System.out.println(personsArray[i].getName());
+    }
+
+
+    while(int i < personsArray.length) {
+      System.out.println();
+    }
   }
 
   public static void printNumbers() {
